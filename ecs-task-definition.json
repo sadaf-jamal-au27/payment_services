@@ -1,0 +1,19 @@
+{
+    "family": "payment-gateway",
+    "containerDefinitions": [
+      {
+        "name": "payment-gateway",
+        "image": "796150644719.dkr.ecr.us-east-1.amazonaws.com/payments-gateway:${IMAGE_TAG}",
+        "memory": 512,
+        "cpu": 256,
+        "essential": true,
+        "portMappings": [
+          {
+            "containerPort": 5000,
+            "hostPort": 5000
+          }
+        ]
+      }
+    ]
+  }
+  
